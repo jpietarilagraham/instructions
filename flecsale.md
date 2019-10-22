@@ -21,7 +21,7 @@ make install
 
 ```
 cd ../..
-git clone --recursive https://github.com/laristra/flecsale.git --branch feature/reisner/legion
+git clone --recursive https://github.com/laristra/flecsale.git --branch feature/reisner/legion --single-branch
 export CMAKE_PREFIX_PATH=$HOME/opt/$VERSION
 cd flecsale; mkdir build; cd build
 cmake .. -DENABLE_UNIT_TESTS=OFF -DCMAKE_BUILD_TYPE=Debug -DFLECSI_RUNTIME_MODEL=legion
