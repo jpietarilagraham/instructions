@@ -1,33 +1,51 @@
-# FleCSALE build instructions (darwin non-spack version)
+# FleCSALE build instructions (sapling partial-spack version)
 
-## Load modules
+## Required spack packages
 
 ```
-module load cmake git mpich/3.2.1-gcc_8.2.0 boost/1.67.0
+git clone git@github.com:spack/spack.git
+source $HOME/github/spack/share/spack/setup-env.sh
+nohup spack install gcc@8.3.0%gcc@8.4.0 2>&1 > gcc8.3.0.build.txt &
+spack load gcc; spack compiler find
+spack install boost%gcc@8.3.0; spack load boost
+spack install cmake%gcc@8.3.0; spack load cmake
+spack install lua%gcc@8.3.0; spack load lua
+spack install mpich@3.3%gcc@8.3.0; spack load mpich
 ```
 
 ## Build and install flecsi-third-party
 
 ```
-git clone --recursive git@github.com:laristra/flecsi-third-party.git
-cd flecsi-third-party; mkdir build; cd build
-export VERSION=`git rev-parse HEAD`
-cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/opt/$VERSION -DCMAKE_BUILD_TYPE=Debug -DLEGION_USE_CUDA=OFF -DLEGION_USE_HDF5=OFF -DLEGION_USE_OPENMP=OFF -DENABLE_CALIPER=OFF
-make -j
-make install
+export VERSION=mpich_3.3-gcc_8.3.0
+export CMAKE_PREFIX_PATH=$HOME/opt/$VERSION:$CMAKE_PREFIX_PATH
+export LD_LIBRARY_PATH=$HOME/opt/$VERSION/lib:$HOME/opt/$VERSION/lib64:$LD_LIBRARY_PATH
+git clone --recursive https://github.com/laristra/flecsi-third-party.git
+cd flecsi-third-party; mkdir build-$VERSION
+cd legion; git checkout -b control_replication origin/control_replication
+cd ../../build-$VERSION
+cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/opt/$VERSION -DCMAKE_BUILD_TYPE=Release -DENABLE_CALIPER=OFF -DCMAKE_C_FLAGS=-g -DCMAKE_CXX_FLAGS=-g
+make –j; make install
 ```
 
-## Build and run flecsale
+## Build and test flecsale
 
 ```
 cd ../..
-git clone --recursive https://github.com/laristra/flecsale.git --single-branch
-export CMAKE_PREFIX_PATH=$HOME/opt/$VERSION
-cd flecsale; mkdir build; cd build
-cmake .. -DENABLE_UNIT_TESTS=OFF -DCMAKE_BUILD_TYPE=Debug -DFLECSI_RUNTIME_MODEL=legion -DENABLE_CALIPER=OFF
+git clone --recursive https://github.com/laristra/flecsale.git
+cd flecsale; mkdir build-$VERSION; cd build-$VERSION
+cmake .. -DENABLE_UNIT_TESTS=ON -DCMAKE_BUILD_TYPE=Release -DFLECSI_RUNTIME_MODEL=legion -DENABLE_CALIPER=OFF -DCMAKE_C_FLAGS=-g -DCMAKE_CXX_FLAGS=-g -DENABLE_FLECSI_TUTORIAL=OFF
 make -j
-cd apps/hydro/2d/
-mpirun -n 2 ./hydro_2d -m ../../../../data/meshes/square_32x32.g
-cd ../../maire_hydro/2d/
-mpirun -n 2 ./maire_hydro_2d -m ../../../../data/meshes/square_32x32.g
+ctest
+```
+
+## Create a mesh
+
+```
+mpiexec -n 12 $HOME/github/flecsale/build-$VERSION/specializations/apps/make_mesh/make_mesh --dimensions 26 78 130 --partitions 1 2 6 --output-file 26x78x130.g
+```
+
+## Run flecsale
+
+```
+mpiexec -n 12 $HOME/github/flecsale/build-$VERSION/apps/hydro/3d/hydro_3d -m 26x78x130.g.012 -ll:gsize 0
 ```
