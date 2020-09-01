@@ -1,0 +1,145 @@
+MPI Rank 0 maps to Legion Address Space 0
+MPI Rank 1 maps to Legion Address Space 1
+MPI Rank 2 maps to Legion Address Space 2
+MPI Rank 3 maps to Legion Address Space 3
+MPI Rank 4 maps to Legion Address Space 4
+MPI Rank 5 maps to Legion Address Space 5
+MPI Rank 6 maps to Legion Address Space 6
+MPI Rank 7 maps to Legion Address Space 7
+MPI Rank 0 maps to Legion Address Space 0
+MPI Rank 1 maps to Legion Address Space 1
+MPI Rank 2 maps to Legion Address Space 2
+MPI Rank 3 maps to Legion Address Space 3
+MPI Rank 4 maps to Legion Address Space 4
+MPI Rank 5 maps to Legion Address Space 5
+MPI Rank 6 maps to Legion Address Space 6
+MPI Rank 7 maps to Legion Address Space 7
+MPI Rank 0 maps to Legion Address Space 0
+MPI Rank 1 maps to Legion Address Space 1
+MPI Rank 2 maps to Legion Address Space 2
+MPI Rank 3 maps to Legion Address Space 3
+MPI Rank 4 maps to Legion Address Space 4
+MPI Rank 5 maps to Legion Address Space 5
+MPI Rank 6 maps to Legion Address Space 6
+MPI Rank 7 maps to Legion Address Space 7
+MPI Rank 0 maps to Legion Address Space 0
+MPI Rank 1 maps to Legion Address Space 1
+MPI Rank 2 maps to Legion Address Space 2
+MPI Rank 3 maps to Legion Address Space 3
+MPI Rank 4 maps to Legion Address Space 4
+MPI Rank 5 maps to Legion Address Space 5
+MPI Rank 6 maps to Legion Address Space 6
+MPI Rank 7 maps to Legion Address Space 7
+MPI Rank 0 maps to Legion Address Space 0
+MPI Rank 1 maps to Legion Address Space 1
+MPI Rank 2 maps to Legion Address Space 2
+MPI Rank 3 maps to Legion Address Space 3
+MPI Rank 4 maps to Legion Address Space 4
+MPI Rank 5 maps to Legion Address Space 5
+MPI Rank 6 maps to Legion Address Space 6
+MPI Rank 7 maps to Legion Address Space 7
+MPI Rank 0 maps to Legion Address Space 0
+MPI Rank 1 maps to Legion Address Space 1
+MPI Rank 2 maps to Legion Address Space 2
+MPI Rank 3 maps to Legion Address Space 3
+MPI Rank 4 maps to Legion Address Space 4
+MPI Rank 5 maps to Legion Address Space 5
+MPI Rank 6 maps to Legion Address Space 6
+MPI Rank 7 maps to Legion Address Space 7
+MPI Rank 0 maps to Legion Address Space 0
+MPI Rank 1 maps to Legion Address Space 1
+MPI Rank 2 maps to Legion Address Space 2
+MPI Rank 3 maps to Legion Address Space 3
+MPI Rank 4 maps to Legion Address Space 4
+MPI Rank 5 maps to Legion Address Space 5
+MPI Rank 6 maps to Legion Address Space 6
+MPI Rank 7 maps to Legion Address Space 7
+MPI Rank 0 maps to Legion Address Space 0
+MPI Rank 1 maps to Legion Address Space 1
+MPI Rank 2 maps to Legion Address Space 2
+MPI Rank 3 maps to Legion Address Space 3
+MPI Rank 4 maps to Legion Address Space 4
+MPI Rank 5 maps to Legion Address Space 5
+MPI Rank 6 maps to Legion Address Space 6
+MPI Rank 7 maps to Legion Address Space 7
+Using mesh file "/home/jgraham/github/instructions/meshes/32x32on8/32x32.g.08".
+Finished mesh partitioning.
+[4 - 7f66923fc940]    0.974289 {4}{runtime}: [warning 1027] LEGION WARNING: Ignoring spurious additional target processors requested in 'map_task' for task setup_rank_context_task (ID 1028) by mapper default because task is part of a must epoch launch. (from file /home/jgraham/github/flecsi-third-party/legion/runtime/legion/legion_tasks.cc:2624)
+For more information see:
+http://legion.stanford.edu/messages/warning_code.html#warning_code_1027
+
+[5 - 7f0aacc90940]    0.974288 {4}{runtime}: [warning 1027] LEGION WARNING: Ignoring spurious additional target processors requested in 'map_task' for task setup_rank_context_task (ID 1037) by mapper default because task is part of a must epoch launch. (from file /home/jgraham/github/flecsi-third-party/legion/runtime/legion/legion_tasks.cc:2624)
+For more information see:
+http://legion.stanford.edu/messages/warning_code.html#warning_code_1027
+
+[1 - 7fc065737940]    0.974403 {4}{runtime}: [warning 1027] LEGION WARNING: Ignoring spurious additional target processors requested in 'map_task' for task setup_rank_context_task (ID 985) by mapper default because task is part of a must epoch launch. (from file /home/jgraham/github/flecsi-third-party/legion/runtime/legion/legion_tasks.cc:2624)
+For more information see:
+http://legion.stanford.edu/messages/warning_code.html#warning_code_1027
+
+[2 - 7fe232901940]    0.974379 {4}{runtime}: [warning 1027] LEGION WARNING: Ignoring spurious additional target processors requested in 'map_task' for task setup_rank_context_task (ID 1010) by mapper default because task is part of a must epoch launch. (from file /home/jgraham/github/flecsi-third-party/legion/runtime/legion/legion_tasks.cc:2624)
+For more information see:
+http://legion.stanford.edu/messages/warning_code.html#warning_code_1027
+
+[6 - 7f799baaf940]    0.974378 {4}{runtime}: [warning 1027] LEGION WARNING: Ignoring spurious additional target processors requested in 'map_task' for task setup_rank_context_task (ID 1046) by mapper default because task is part of a must epoch launch. (from file /home/jgraham/github/flecsi-third-party/legion/runtime/legion/legion_tasks.cc:2624)
+For more information see:
+http://legion.stanford.edu/messages/warning_code.html#warning_code_1027
+
+[3 - 7f0624cda940]    0.974426 {4}{runtime}: [warning 1027] LEGION WARNING: Ignoring spurious additional target processors requested in 'map_task' for task setup_rank_context_task (ID 1019) by mapper default because task is part of a must epoch launch. (from file /home/jgraham/github/flecsi-third-party/legion/runtime/legion/legion_tasks.cc:2624)
+For more information see:
+http://legion.stanford.edu/messages/warning_code.html#warning_code_1027
+
+[0 - 7f803ae97940]    0.975301 {4}{runtime}: [warning 1027] LEGION WARNING: Ignoring spurious additional target processors requested in 'map_task' for task setup_rank_context_task (ID 1072) by mapper default because task is part of a must epoch launch. (from file /home/jgraham/github/flecsi-third-party/legion/runtime/legion/legion_tasks.cc:2624)
+For more information see:
+http://legion.stanford.edu/messages/warning_code.html#warning_code_1027
+
+[7 - 7f978c0be940]    0.978895 {4}{runtime}: [warning 1027] LEGION WARNING: Ignoring spurious additional target processors requested in 'map_task' for task setup_rank_context_task (ID 1055) by mapper default because task is part of a must epoch launch. (from file /home/jgraham/github/flecsi-third-party/legion/runtime/legion/legion_tasks.cc:2624)
+For more information see:
+http://legion.stanford.edu/messages/warning_code.html#warning_code_1027
+
+Initializing mesh...done
+[4 - 7f66923fc940]    2.417541 {4}{runtime}: [warning 1071] LEGION WARNING: Region requirement 0 of operation apps::hydro::init_soln_time (UID 1644) in parent task runtime_driver (UID 4) is using uninitialized data for field(s) 25 of logical region (244,4,12) (from file /home/jgraham/github/flecsi-third-party/legion/runtime/legion/legion_ops.cc:636)
+For more information see:
+http://legion.stanford.edu/messages/warning_code.html#warning_code_1071
+
+[6 - 7f799baaf940]    2.417517 {4}{runtime}: [warning 1071] LEGION WARNING: Region requirement 0 of operation apps::hydro::init_soln_time (UID 1646) in parent task runtime_driver (UID 6) is using uninitialized data for field(s) 25 of logical region (246,4,12) (from file /home/jgraham/github/flecsi-third-party/legion/runtime/legion/legion_ops.cc:636)
+For more information see:
+http://legion.stanford.edu/messages/warning_code.html#warning_code_1071
+
+[1 - 7fc065737940]    2.417650 {4}{runtime}: [warning 1071] LEGION WARNING: Region requirement 0 of operation apps::hydro::init_soln_time (UID 1641) in parent task runtime_driver (UID 1) is using uninitialized data for field(s) 25 of logical region (297,4,12) (from file /home/jgraham/github/flecsi-third-party/legion/runtime/legion/legion_ops.cc:636)
+For more information see:
+http://legion.stanford.edu/messages/warning_code.html#warning_code_1071
+
+[2 - 7fe232901940]    2.418323 {4}{runtime}: [warning 1071] LEGION WARNING: Region requirement 0 of operation apps::hydro::init_soln_time (UID 1642) in parent task runtime_driver (UID 2) is using uninitialized data for field(s) 25 of logical region (250,4,12) (from file /home/jgraham/github/flecsi-third-party/legion/runtime/legion/legion_ops.cc:636)
+For more information see:
+http://legion.stanford.edu/messages/warning_code.html#warning_code_1071
+
+[7 - 7f978c0be940]    2.418508 {4}{runtime}: [warning 1071] LEGION WARNING: Region requirement 0 of operation apps::hydro::init_soln_time (UID 1647) in parent task runtime_driver (UID 7) is using uninitialized data for field(s) 25 of logical region (247,4,12) (from file /home/jgraham/github/flecsi-third-party/legion/runtime/legion/legion_ops.cc:636)
+For more information see:
+http://legion.stanford.edu/messages/warning_code.html#warning_code_1071
+
+[3 - 7f0624cda940]    2.418820 {4}{runtime}: [warning 1071] LEGION WARNING: Region requirement 0 of operation apps::hydro::init_soln_time (UID 1643) in parent task runtime_driver (UID 3) is using uninitialized data for field(s) 25 of logical region (251,4,12) (from file /home/jgraham/github/flecsi-third-party/legion/runtime/legion/legion_ops.cc:636)
+For more information see:
+http://legion.stanford.edu/messages/warning_code.html#warning_code_1071
+
+[5 - 7f0aacc90940]    2.419107 {4}{runtime}: [warning 1071] LEGION WARNING: Region requirement 0 of operation apps::hydro::init_soln_time (UID 1645) in parent task runtime_driver (UID 5) is using uninitialized data for field(s) 25 of logical region (245,4,12) (from file /home/jgraham/github/flecsi-third-party/legion/runtime/legion/legion_ops.cc:636)
+For more information see:
+http://legion.stanford.edu/messages/warning_code.html#warning_code_1071
+
+[0 - 7f803ae97940]    2.419472 {4}{runtime}: [warning 1071] LEGION WARNING: Region requirement 0 of operation apps::hydro::init_soln_time (UID 1720) in parent task runtime_driver (UID 24) is using uninitialized data for field(s) 25 of logical region (304,4,12) (from file /home/jgraham/github/flecsi-third-party/legion/runtime/legion/legion_ops.cc:636)
+For more information see:
+http://legion.stanford.edu/messages/warning_code.html#warning_code_1071
+
+================================================================================
+|  Step:         1  |  Time:     1.320554e-02  |  Step Size:     1.320554e-02  |
+================================================================================
+|  Step:         2  |  Time:     2.258528e-02  |  Step Size:     9.379742e-03  |
+Final solution time is 2.26e-02 after 2 steps.
+Elapsed wall time is 0.2922s.
+done legion init
+done legion init
+done legion init
+done legion init
+done legion init
+done legion init
+done legion init
+done legion init
